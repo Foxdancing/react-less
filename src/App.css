@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0px 100px 0px;
+    background: rgb(251, 248, 248);
+  
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards{
+    width: 170px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 13px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 3px 1px rgb(239, 235, 235);
+    background: rgb(255, 255, 255);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+    color: rgb(89, 68, 63);
+    font-family: 'SchoolBook';
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.quantity{
+    color: rgb(89, 68, 63);
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.cardImg{
+    max-width: 70px;
+    margin-top: -27px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.service_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
