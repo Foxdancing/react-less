@@ -1,0 +1,62 @@
+.confines{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgb(251, 248, 248);
+    
+}
+
+
+.block{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 0px 50px 0px;
+    background: rgb(251, 248, 248);
+  
+    
+}
+
+.cards{
+    width: 190px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 13px;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 3px 1px rgb(239, 235, 235);
+    background: rgb(255, 255, 255);
+}
+
+h2{
+    color: rgb(89, 68, 63);
+    font-family: 'SchoolBook';
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 1px;
+}
+
+.quantity{
+    color: rgb(89, 68, 63);
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: left;
+}
+
+.cardImg{
+    max-width: 70px;
+    margin-top: -27px;
+}
+
+.service_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

@@ -1,0 +1,103 @@
+.history{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px 0px 40px 0px;
+    background: rgb(255, 254, 254);
+  
+    }
+
+    .history_text{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+     
+    }
+
+    .history_text h2{
+  display: flex;
+  justify-content: center;
+  color: rgb(8, 6, 6);
+  font-family:'Roboto';
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+    }
+
+    .history_text p{
+        display: flex;
+      color: rgb(89, 68, 63);
+      max-width: 342px;
+        
+    }
+
+    .history_further{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+
+    .further{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 197, 158);
+  font-family:'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+    }
+
+  .arrow{
+    display: flex;
+    max-width: 4px;
+  }
+
+  .our_specialists_foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0px 20px 0px;
+    border-radius: 100%;
+  }
+
+    .img_specialist img{
+        max-width: 120px;
+    border-radius: 100%;
+    
+    }
+
+  .circl_arrow{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
+    background-color: rgb(255, 197, 158);;
+  }
+  .our_specialists_all{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+  }
+
+  .all{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 197, 158);
+    font-family:'Roboto';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+  }

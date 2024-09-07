@@ -1,7 +1,8 @@
 
 import './App.css';
-import Cards from './components/Cards';
-import Header from './components/Header';
+
+import Cards from './components/Card/Card';
+import Header from './components/Header/Header';
 import someImgSrc1 from './img/stethoscope.svg';
 import someImgSrc2 from './img/knife.svg';
 import someImgSrc3 from './img/collar.svg';
@@ -18,14 +19,12 @@ import someImgSrc13 from './img/lungs.svg';
 import someImgSrc14 from './img/lizard.svg';
 import someImgSrc15 from './img/pills.svg';
 import someImgSrc16 from './img/grooming.svg';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
+
 
 
 function App() {
-
-  // let boneUp = someImgSrc4;
-  // let boneDown = someImgSrc17;
-
-  // const bone = boneUp + boneDown;
 
   let servCards = [
       {
@@ -132,12 +131,16 @@ function App() {
     <div className="App">
      <Header></Header>
 
-     <div className="block">
+     <div className='confines'>
+      <div className="block">
 
-    {servCards.map(elem => (
-      <Cards elem={elem} key={elem.id}></Cards>
-    ))}</div>
+      {servCards.map(elem => (
+        <Cards elem={elem} key={elem.id}></Cards>
+      ))}</div>
+    </div>
 
+    <Main></Main>
+    <Footer></Footer>
 
     </div>
   );
