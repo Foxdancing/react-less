@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.css';
 import logo from '..//..//img/LOGOO.svg';
 import location from '..//..//img/location.png';
 import circl from '..//..//img/circl.svg';
@@ -9,53 +8,54 @@ import vk from '..//..//img/vk.png';
 import youtube from '..//..//img/youtube.png';
 import catDog from '..//..//img/cat&dog.png';
 import bird from '..//..//img/bird.png';
+import head from './Header.module.css';
 
 
 
 export default function Header() {
   return (
-    <div className='wrap'>
-       <nav className="navbar">
-              <ul className="navbar-list">
-                <li className="haed">
-                    <li className="LOGO">
+    <div className={head.wrap}>
+       <nav className={head.navbar}>
+              <ul className={head.navbar_list}>
+                <li className={head.navbar_list_haed}>
+                    <div className={head.LOGO}>
                     <img  src={logo} alt="no LOGO" />
-                    </li>
+                    </div>
 
-                    <li className="burger">
-                        <span className="line"></span>
-                        <span className="line"></span>
-                        <span className="line"></span>
-                    </li>
+                    <div className={head.burger}>
+                        <span className={head.line}></span>
+                        <span className={head.line}></span>
+                        <span className={head.line}></span>
+                    </div>
                 </li>
 
-                <li className='navigation'>
-                  <li className="wrap-info">
-                    <li><a href="#">Личный кабинет</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Новости и акции</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Бронь</a></li>
-                  </li>
+                <li className={head.navbar_list_navigation}>
+                  <div className={head.wrap_info}>
+                    <p><a href="#">Личный кабинет</a></p>
+                    <p><a href="#">О нас</a></p>
+                    <p><a href="#">Новости и акции</a></p>
+                    <p><a href="#">Каталог</a></p>
+                    <p><a href="#">Бронь</a></p>
+                  </div>
                   
-                  <li className='location'>
-                    <li>
-                      <img className='img_location'  src={location}/>
+                  <div className={head.location}>
+                    <p>
+                      <img className={head.img_location}  src={location} alt=""/>
                       <a href='#'>Волгоград</a>
 
-                    </li>
-                  </li>
+                    </p>
+                  </div>
 
                 </li>  
                 </ul>
 
             </nav>
 
-            <div className='container'>
+            <div className={head.container}>
 
-              <div className='list_numbers'>
-              <ul className='numbers'>
-                <li>1 <img className='circl' src={circl}/></li>
+              <div className={head.list_numbers}>
+              <ul className={head.numbers}>
+                <li>1 <img className={head.circl} src={circl} alt=" "/></li>
                 <li>2</li>
                 <li>3</li>
                 <li>4</li>
@@ -65,30 +65,30 @@ export default function Header() {
               </ul>
               </div>
 
-              <div className='info'>
-                <h1 class="title">Айболит круглосуточная ветклиника</h1>
+              <div className={head.info}>
+                <h1 className={head.title}>Айболит круглосуточная ветклиника</h1>
 
-                <div class="btn">
-                  <button type='button'>ЗАПИСАТЬСЯ</button>
-                </div>
+                
+                  <button className={head.btn} type='button'>ЗАПИСАТЬСЯ</button>
+              
 
-                <div class="social_network">
-                  <a href="#"><img src={inst}/></a>
-                  <a href="#"><img src={fb}/></a>
-                  <a href="#"><img src={vk}/></a>
-                  <a href="#"><img src={youtube}/></a>
+                <div className={head.social_network}>
+                  <a href="#"><img src={inst} alt=" "/></a>
+                  <a href="#"><img src={fb} alt=" "/></a>
+                  <a href="#"><img src={vk} alt=" "/></a>
+                  <a href="#"><img src={youtube} alt=" "/></a>
                 </div>
 
               </div>
 
-              <div class="catdog_desktop">
-                <img src={catDog}/>
+              <div className={head.catdog_desktop}>
+                <img src={catDog} alt=" "/>
                 
               </div>
 
              
-              <div class="bird_notepad">
-                <img src={bird}/>
+              <div className={head.bird_notepad}>
+                <img src={bird} alt=" "/>
               </div>
 
             </div> 

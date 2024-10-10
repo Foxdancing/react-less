@@ -2,6 +2,7 @@
 import './App.css';
 
 import Cards from './components/Card/Card';
+import crd from './components/Card/Card.module.css'
 import Header from './components/Header/Header';
 import someImgSrc1 from './img/stethoscope.svg';
 import someImgSrc2 from './img/knife.svg';
@@ -131,8 +132,8 @@ function App() {
     <div className="App">
      <Header></Header>
 
-     <div className='confines'>
-      <div className="block">
+     <div className={crd.confines}>
+      <div className={crd.block}>
 
       {servCards.map(elem => (
         <Cards elem={elem} key={elem.id}></Cards>
