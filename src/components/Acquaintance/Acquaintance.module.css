@@ -82,7 +82,19 @@
     border-radius: 100%;
     box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.2);
     background-color: rgb(255, 197, 158);;
+    cursor: pointer;
   }
+
+  .circl_arrow img {
+    height: 30px;
+  }
+
+  .circl_arrow:hover{
+    transform: scale(1.3);
+    transition: all 0.2s ease;
+  }
+
+
   .our_specialists_all{
     display: flex;
       align-items: center;

@@ -26,7 +26,7 @@ export default function Acquaintance() {
         <div className={acq.our_specialists}>
          <h2>Наши специалисты</h2>
           <div className={acq.our_specialists_foto}>
-            <button type='button' className={acq.circl_arrow}>
+            <button  className={acq.circl_arrow} type='button'>
               <img  src={arrow1}/>
             </button>
 
@@ -39,14 +39,14 @@ export default function Acquaintance() {
                 <img className={acq.phantom} src={surgeon}  alt="foto"/>
             </div>
             <div className={acq.circl_arrow}>
-              <img  src={arrow2}/>
+              <img  src={arrow2} alt=''/>
             </div>
 
           </div>
 
           <div className={acq.our_specialists_all}>
             <a href="#" className={acq.all}>ПОСМОТРЕТЬ ВСЕХ</a>
-            <img className={acq.arrow} src={arrow}/>
+            <img src={arrow} alt=''/>
           </div>
           
         </div>

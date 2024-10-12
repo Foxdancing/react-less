@@ -7,15 +7,22 @@ export default function Swiper() {
 
     <nav>
         <ul>
-            {['section1', 'section2', 'section3', 'section4', 'section5'].map}(
+            {['section1', 'section2', 'section3', 'section4', 'section5'].map(
                 (section, index) => (
                     <li key={section}>
                         <ScrolLink to={section} smooth={true} duration={500}>
-
+                            <span
+                                style={{
+                                    fontWeight:
+                                    activeSection === section ? 'bold' : 'normal',
+                                }}
+                            >
+                                {index + 1}
+                            </span>
                         </ScrolLink>
                     </li>
                 )
-            )
+            )}
         </ul>
     </nav>
 
